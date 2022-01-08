@@ -25,6 +25,8 @@ Examples:
 3. The "Bless" icon is present in addition to other options here.
 4. The GM clicks on the "Bless" icon, and the "Bless" effect on the token's actor is deleted because the effect did not originate from that token's actor.
 
+https://user-images.githubusercontent.com/7644614/148661276-3160fc8f-a2e0-4da8-9733-b28f0a3c6af9.mp4
+
 ## Compatibility
 
 Tested with dnd5e, might work on other systems as well though.
