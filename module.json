@@ -2,7 +2,7 @@
   "name": "temp-effects-as-statuses",
   "title": "Temporary Effects as Token Statuses",
   "description": "A module that makes it easy to disable or delete temporary effects.",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "author": "Andrew Krigline",
   "authors": [
     {
@@ -15,6 +15,11 @@
   ],
   "scripts": [
     "./scripts/temp-effects-as-statuses.js"
+  ],
+  "dependencies": [
+    {
+      "name": "lib-wrapper"
+    }
   ],
   "minimumCoreVersion": "0.8.9",
   "compatibleCoreVersion": "9",
