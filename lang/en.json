@@ -1,0 +1,10 @@
+{
+  "temp-effects-as-statuses": {
+    "settings": {
+      "toggle-deletes": {
+        "name": "Always delete instead of disable",
+        "hint": "Instead of disabling some effects and deleting others, always delete a temporary effect toggled from the status menu."
+      }
+    }
+  }
+}

@@ -15,7 +15,7 @@ This module's goal is to allow GMs to disable/delete active effects from the tok
 
 When a token has a temporary active effect active, display that active effect icon in the Status Effects HUD element.
 
-Interacting with that effect icon will do one of the following:
+Interacting with that effect icon will do one of the following by default:
 - If the effect has a `statusId`, it was meant to be short-lived or re-created frequently, delete the effect.
 - If the effect has no `statusId`, disable it.
 
@@ -24,6 +24,9 @@ Examples:
 2. The GM right clicks on one of the Tokens that isn't Akra and opens the status effect menu.
 3. The "Bless" icon is present in addition to other options here.
 4. The GM clicks on the "Bless" icon, and the "Bless" effect on the token's actor is deleted because the effect did not originate from that token's actor.
+
+### Setting: "Always delete instead of disable"
+Having this setting toggled on will always delete the actor's Active Effect instead of sometimes disabling it. This is most useful for games using DAE/MIDI/Times Up to manage their active effect applications.
 
 https://user-images.githubusercontent.com/7644614/148661276-3160fc8f-a2e0-4da8-9733-b28f0a3c6af9.mp4
 
