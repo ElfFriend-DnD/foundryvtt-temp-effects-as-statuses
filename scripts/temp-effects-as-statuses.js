@@ -27,6 +27,7 @@ class TempEffectsAsStatuses {
 Hooks.on('init', () => {
   console.log(`${TempEffectsAsStatuses.MODULE_NAME} | Initializing ${TempEffectsAsStatuses.MODULE_TITLE}`);
   TempEffectsAsStatusesTokenHUD.init();
+  TempEffectsAsStatuses.registerSettings();
 })
 
 Hooks.once('devModeReady', ({ registerPackageDebugFlag }) => {

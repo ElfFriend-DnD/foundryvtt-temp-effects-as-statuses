@@ -13,6 +13,13 @@
       "patreon": "ElfFriend_DnD"
     }
   ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
   "scripts": [
     "./scripts/temp-effects-as-statuses.js"
   ],
