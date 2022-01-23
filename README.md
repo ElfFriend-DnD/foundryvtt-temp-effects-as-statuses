@@ -37,6 +37,7 @@ Tested with dnd5e, might work on other systems as well though.
 Super Charged by:
 
 - [Item Effects to Chat D&D5e](https://github.com/ElfFriend-DnD/foundryvtt-item-effects-to-chat-5e)
+- [Apply Self Effects D&D5e](https://github.com/ElfFriend-DnD/foundryvtt-apply-self-effects-5e)
 
 Compatible with:
 - DF Convienent Effects (Ignore the libwrapper warning, it's working fine).
