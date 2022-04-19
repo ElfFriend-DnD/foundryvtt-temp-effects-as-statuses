@@ -1,0 +1,10 @@
+{
+    "compact-roll-card-5e": {
+        "settings": {
+            "toggle-deletes": {
+                "name": "Toujours supprimer plutôt que désactiver",
+                "hint": "Plutôt que désactiver certaines effets et supprimer d'autres, toujours supprimer un effet lorqu'il est cliquer dans le panneau des effets d'état."
+            }
+        }
+    }
+}
