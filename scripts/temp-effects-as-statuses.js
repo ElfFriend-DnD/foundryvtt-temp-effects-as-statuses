@@ -43,11 +43,11 @@ Hooks.on('renderTokenHUD', (tokenHudApp, html, applicationData) => {
 
   // filter out temporary effects from status icons
   const filteredEffects = tokenHudApp.object.actor.temporaryEffects.filter((effect) => {
-    return !CONFIG.statusEffects.some(statusEffect => statusEffect.id === effect.data.flags?.core?.statusId)
+    return !CONFIG.statusEffects.some(statusEffect => statusEffect.id === effect.getFlag('core', 'statusId'))
   });
 
   const newEffectIcons = `
-  ${filteredEffects.map(effect => `<img class="effect-control active" data-effect-uuid="${effect.uuid}" src="${effect.data.icon}" title="${effect.data.label}" data-status-id="${effect.uuid}" />`).join('')
+  ${filteredEffects.map(effect => `<img class="effect-control active" data-effect-uuid="${effect.uuid}" src="${effect.icon}" title="${effect.label}" data-status-id="${effect.uuid}" />`).join('')
     }
   `
 
@@ -74,7 +74,7 @@ class TempEffectsAsStatusesTokenHUD {
   }
 
   static async toggleEffectByUuid(effectUuid) {
-    const effect = await fromUuid(effectUuid);
+    const effect = fromUuidSync(effectUuid);
     const alwaysDelete = game.settings.get(TempEffectsAsStatuses.MODULE_NAME, TempEffectsAsStatuses.SETTINGS.toggleDelete);
 
     // nuke it if it has a statusId
@@ -87,7 +87,7 @@ class TempEffectsAsStatusesTokenHUD {
 
     // otherwise toggle its disabled status
     const updated = await effect.update({
-      disabled: !effect.data.disabled,
+      disabled: !effect.disabled,
     });
 
     return !!updated;

@@ -1,8 +1,8 @@
 {
-  "name": "temp-effects-as-statuses",
+  "id": "temp-effects-as-statuses",
   "title": "Temporary Effects as Token Statuses",
   "description": "A module that makes it easy to disable or delete temporary effects.",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "author": "Andrew Krigline",
   "authors": [
     {
@@ -23,13 +23,17 @@
   "scripts": [
     "./scripts/temp-effects-as-statuses.js"
   ],
-  "dependencies": [
-    {
-      "name": "lib-wrapper"
-    }
-  ],
-  "minimumCoreVersion": "0.8.9",
-  "compatibleCoreVersion": "9",
+  "relationships": {
+    "requires": [{
+      "id": "lib-wrapper",
+      "compatibility": {
+        "minimum": "1.12.7.1"
+      }
+    }]
+  },
+  "compatibility": {
+    "minimum": 10
+  },
   "url": "https://github.com/ElfFriend-DnD/foundryvtt-temp-effects-as-statuses",
   "bugs": "https://github.com/ElfFriend-DnD/foundryvtt-temp-effects-as-statuses/issues",
   "changelog": "https://github.com/ElfFriend-DnD/foundryvtt-temp-effects-as-statuses/releases",
